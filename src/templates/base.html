@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<!--DOCTYPE html -->
+<html>
+<head>
+    <link rel='stylesheet' href='{% static "css/base.css" %}' />
+    <title>{% block head_title %}Coding for Entrepreneurs{% endblock head_title %}</title>
+<style>
+{% block style %}
+    {% endstyle %}
+</style>
+</head>
+
+<body>
+<div class='container'>{% block content %}
+{% endblock %}</div>
+</body>
+</html>
